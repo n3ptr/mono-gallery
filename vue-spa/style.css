@@ -4,18 +4,23 @@
 }
 
 body {
-	font-size: 62.5%;
+	font-size: 85%;
 	font-family: Garamond, sans-serif;
-	background: url(images/content-bg.png) left repeat-y #FFFADA;
+	/* background: url(images/content-bg.png) left repeat-y #f2d7fe; */
 }
 
-h1 { font-size: 4.0em; }
-p, li { font-size: 1.8em; }
+h2 { font-size: 2.0em;
+	text-align: center;
+}
+p {
+	padding: 15px;
+	text-align: center;
+}
 
 .clear { clear: both; }
 
 #header {
-	background: #e3da9d;
+	background: #f2d7fe;
 	padding: 15px 0 15px 15px;
 }
 
@@ -28,11 +33,12 @@ p, li { font-size: 1.8em; }
 	}
 
 #sidebar {
+	/* background: #f2d7fe; */
 	width: 145px;
 	float: left;
 	padding: 0 0 0 15px;
 	}
 	#sidebar ul {
+		/* background: #f2d7fe; */
 		list-style: inside;
 	}
-
