@@ -1,12 +1,21 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <!-- much of the layout here was originally found @  https://css-tricks.com/examples/SuperSimpleTwoColumn/ -->
+<!-- Slide show modified from W3schools https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+
 <head>
 	<title>yet unknown</title>
-	
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="slides.js"></script>
+	<script type="text/javascript">
+        function firstSlide() {
+			showSlides(slideIndex);
+        }
+        window.onload = firstSlide;
+    </script>
 </head>
 
 <body>
@@ -14,33 +23,82 @@
 	<div id="header">
 		<!-- <h1>Super Simple Two Column Layout</h1> -->
 	</div>
-	
+
 	<div id="content">
 		<div id="sidebar">
-				<p>
-					<H2>Joaquin Cuevas</H2> 
-				</p>
-				<p class = "leftItem"> 
+			<p>
+				<H2>Joaquin Cuevas</H2>
+			</p>
+			<!-- <p class = "leftItem"> 
 					<a href="">Overview</a>
-				</p>
-				<p> 
-					<a href="">My Gear</a>
-				</p>
-				<p> 
-					<a href="">Prints</a> 
-				</p>
-				<p> 
-					<a href="">Contact</a> 
-				</p>
+				</p> -->
+			<p>
+				<a href="">Gear</a>
+			</p>
+			<p>
+				<a href="">Prints</a>
+			</p>
+			<p>
+				<a href="">Contact</a>
+			</p>
 		</div>
-		
+
 		<div id="main-content">
-			<p>Dolor consuetudium putamus nunc illum at. Qui vel accumsan zzril odio feugait. Iriure nobis aliquam est qui nam. Est ii ad et quod consuetudium. Eu vero tation placerat illum dolore. Suscipit saepius aliquip commodo erat me. Consequat littera autem anteposuerit ullamcorper dolor. Legunt doming dignissim facer futurum quinta. Consuetudium ad magna tempor ut suscipit. Typi aliquam ex esse quarta qui.</p>
-			
-			<br />
+
+			<!-- Slideshow container -->
+			<br>
+			<div class="slideshow-container">
+
+				<!-- Full-width images with number and caption text -->
+
+				<div class="mySlides fade">
+					<!-- <div class="numbertext">2 / 4</div> -->
+					<img src="images/img1.jpg" style="width:100%">
+					<div class="text">Caption Text</div>
+				</div>
+
+				<div class="mySlides fade">
+					<!-- <div class="numbertext">3 / 4</div> -->
+					<img src="images/img2.jpg" style="width:100%">
+					<div class="text">Caption Two</div>
+				</div>
+
+				<div class="mySlides fade">
+					<!-- <div class="numbertext">4 / 4</div> -->
+					<img src="images/img3.jpg" style="width:100%">
+					<div class="text">Caption Three</div>
+				</div>
+
+				<div class="mySlides fade">
+					<!-- <div class="numbertext">1 / 4</div> -->
+					<img src="images/img4.jpg" style="width:100%">
+					<div class="text">Caption Four</div>
+				</div>
+
+				<div class="mySlides">
+					<!-- <div class="numbertext">1 / 4</div> -->
+					<img src="images/img5.jpg" style="width:100%">
+					<div class="text">Caption Four</div>
+				</div>
+
+				<!-- Next and previous buttons -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+
+			<!-- The dots/circles
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div> -->
+
 		</div>
-		
-		<div class="clear"></div>
+
+
+
+
+		<!-- <div class="clear"></div> -->
 	</div>
 
 </body>
